@@ -1,0 +1,452 @@
+[
+    {
+      "bookId": 2,
+      "book": "Arabic Course #2",
+      "lesson": [
+        {
+          "lessonId": 1,
+          "name": "Class 1",
+          "topic": "LESSON ON إنَّ",
+          "youtubeURL": "https://www.youtube.com/embed/CBnMfwLI9ow"
+        },
+        {
+          "lessonId": 2,
+          "name": "Class 2",
+          "topic": "LESSON ON إنَّ ، ذو ، أم",
+          "youtubeURL": "https://www.youtube.com/embed/KQ8ybzlTAi8"
+        },
+        {
+          "lessonId": 3,
+          "name": "Class 3",
+          "topic": "LESSON ON إنَّ، ليس",
+          "youtubeURL": "https://www.youtube.com/embed/f_ky4fyCsOI"
+        },
+        {
+          "lessonId": 4,
+          "name": "Class 4",
+          "topic": "LESSON ON ليس",
+          "youtubeURL": "https://www.youtube.com/embed/9-PbVnk-l_0"
+        },
+        {
+          "lessonId": 5,
+          "name": "Class 5",
+          "topic": "INTRODUCTION TO PRESENT TENSE",
+          "youtubeURL": "https://www.youtube.com/embed/GAouWfSnDlk"
+        },
+        {
+          "lessonId": 6,
+          "name": "Class 6",
+          "topic": "COMPARATIVE AND SUPERLATIVE",
+          "youtubeURL": "https://www.youtube.com/embed/KPEV-cVmxr4"
+        },
+        {
+          "lessonId": 7,
+          "name": "Class 7",
+          "topic": "LESSON on اسم التفضيل and حرف النصب",
+          "youtubeURL": "https://www.youtube.com/embed/ZogOqpdnL0k"
+        },
+        {
+          "lessonId": 8,
+          "name": "Class 8",
+          "topic": "LESSON ON NUMBERS FROM 11-20",
+          "youtubeURL": "https://www.youtube.com/embed/DGxoN-SKqo4"
+        },
+        {
+          "lessonId": 9,
+          "name": "Class 9",
+          "topic": "practising فعل المضارع",
+          "youtubeURL": "https://www.youtube.com/embed/Jfplo9dQOQs"
+        },
+        {
+          "lessonId": 10,
+          "name": "Class 10",
+          "topic": "lesson no 4 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/NJjKi0qRsAo"
+        },
+        {
+          "lessonId": 11,
+          "name": "Class 11",
+          "topic": "UNDERSTANDING مفعولٌ بِهِ",
+          "youtubeURL": "https://www.youtube.com/embed/boUseWcusa4"
+        },
+        {
+          "lessonId": 12,
+          "name": "Class 12",
+          "topic": "2 LESSON on مفعولٌ بهِ",
+          "youtubeURL": "https://www.youtube.com/embed/wXfc8YdJ-_s"
+        },
+        {
+          "lessonId": 13,
+          "name": "Class 13",
+          "topic": "Introduction to weak فعل",
+          "youtubeURL": "https://www.youtube.com/embed/uM-0q2K3OfM"
+        },
+        {
+          "lessonId": 14,
+          "name": "Class 14",
+          "topic": "LESSON NO 6 FROM BOOK 2",
+          "youtubeURL": "https://www.youtube.com/embed/5LSmFNKdQgY"
+        },
+        {
+          "lessonId": 15,
+          "name": "Class 15",
+          "topic": "COMPLETING LESSON NO 6",
+          "youtubeURL": "https://www.youtube.com/embed/OIrsj-Imnpc"
+        },
+        {
+          "lessonId": 16,
+          "name": "Class 16",
+          "topic": "LESSON NO 7 FROM BOOK2",
+          "youtubeURL": "https://www.youtube.com/embed/CKXtWYsL-hc"
+        },
+        {
+          "lessonId": 17,
+          "name": "Class 17",
+          "topic": "class 17",
+          "youtubeURL": "https://www.youtube.com/embed/uKk6ePo0MtM"
+        },
+        {
+          "lessonId": 18,
+          "name": "Class 18",
+          "topic": "Ararbic verbs vocabulary",
+          "youtubeURL": "https://www.youtube.com/embed/4fszhwkaXBk"
+        },
+        {
+          "lessonId": 19,
+          "name": "Class 19",
+          "topic": "LESSON NO 8",
+          "youtubeURL": "https://www.youtube.com/embed/E0V6dW3h6EI"
+        },
+        {
+          "lessonId": 20,
+          "name": "Class 20",
+          "topic": "LESSON NO 9",
+          "youtubeURL": "https://www.youtube.com/embed/PtpyvxGsnDc"
+        },
+        {
+          "lessonId": 21,
+          "name": "Class 21",
+          "topic": "LESSON NO 9- CONTINUED",
+          "youtubeURL": "https://www.youtube.com/embed/o9aTqtt5CY0"
+        },
+        {
+          "lessonId": 22,
+          "name": "Class 22",
+          "topic": "Arabic vocabulary bites",
+          "youtubeURL": "https://www.youtube.com/embed/wyVWjoKIBk0"
+        },
+        {
+          "lessonId": 23,
+          "name": "Class 23",
+          "topic": "FINISHING LESSON NO 9",
+          "youtubeURL": "https://www.youtube.com/embed/36PUqX9zR0w"
+        },
+        {
+          "lessonId": 24,
+          "name": "Class 24",
+          "topic": "learning about ism mousula and present tense verb moods",
+          "youtubeURL": "https://www.youtube.com/embed/xmnnP3ewKjU"
+        },
+        {
+          "lessonId": 25,
+          "name": "Class 25",
+          "topic": "INTRODUCTION TO فعل الأمر",
+          "youtubeURL": "https://www.youtube.com/embed/3ZgeKJhvhlw"
+        },
+        {
+          "lessonId": 26,
+          "name": "Class 26",
+          "topic": "LESSON NO 10 FROM BOOK",
+          "youtubeURL": "https://www.youtube.com/embed/pUZQCRgqCWs"
+        },
+        {
+          "lessonId": 27,
+          "name": "Class 27",
+          "topic": "Lesson on arabic numbers and time",
+          "youtubeURL": "https://www.youtube.com/embed/USui7Zj7-sg"
+        },
+        {
+          "lessonId": 28,
+          "name": "Class 28",
+          "topic": "LESSON ON فعل مضارع AND أمَّا",
+          "youtubeURL": "https://www.youtube.com/embed/DtHiaZ3yVnQ"
+        },
+        {
+          "lessonId": 29,
+          "name": "Class 29",
+          "topic": "Finishing lesson no 11 and doing مصدر",
+          "youtubeURL": "https://www.youtube.com/embed/f_zpud9YVJg"
+        },
+        {
+          "lessonId": 30,
+          "name": "Class 30",
+          "topic": "Arabic vocabulary bites 3",
+          "youtubeURL": "https://www.youtube.com/embed/dpsFtVOI2og"
+        },
+        {
+          "lessonId": 31,
+          "name": "Class 31",
+          "topic": "Lesson on مصدر and using فعل مضارع",
+          "youtubeURL": "https://www.youtube.com/embed/s_tC2jio2YA"
+        },
+        {
+          "lessonId": 32,
+          "name": "Class 32",
+          "topic": "Finishing lesson no 12 from madina book 2",
+          "youtubeURL": "https://www.youtube.com/embed/8MoILlxcHmw"
+        },
+        {
+          "lessonId": 33,
+          "name": "Class 33",
+          "topic": "حرف نصب AND حرف جزم",
+          "youtubeURL": "https://www.youtube.com/embed/YoLNcWv6TqY"
+        },
+        {
+          "lessonId": 34,
+          "name": "Class 34",
+          "topic": "Arabic Vocabular Bites 4",
+          "youtubeURL": "https://www.youtube.com/embed/-z8g6_xIlDo"
+        },
+        {
+          "lessonId": 35,
+          "name": "Class 35",
+          "topic": "Lesson no 13 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/QsYIJ-YXU1Y"
+        },
+        {
+          "lessonId": 36,
+          "name": "Class 36",
+          "topic": "MADINA BOOK 2 CLASS 32 - lesson no 14 from madina book 2",
+          "youtubeURL": "https://www.youtube.com/embed/exefSFPCTqo"
+        },
+        {
+          "lessonId": 37,
+          "name": "Class 37",
+          "topic": "MADINA BOOK 2 CLASS 33 - lesson on فعل أمر and لا الناهية ، لا النافعية",
+          "youtubeURL": "https://www.youtube.com/embed/mXOMcV0fVvQ"
+        },
+        {
+          "lessonId": 38,
+          "name": "Class 38",
+          "topic": "MADINAH BOOK 2 CLASS 34",
+          "youtubeURL": "https://www.youtube.com/embed/Fgg6hDuz67k"
+        },
+        {
+          "lessonId": 39,
+          "name": "Class 39",
+          "topic": "MADINAH BOOK 2 CLASS 35",
+          "youtubeURL": "https://www.youtube.com/embed/jnQYjVF7cRA"
+        },
+        {
+          "lessonId": 40,
+          "name": "Class 40",
+          "topic": "MADINAH BOOK 2 CLASS 36",
+          "youtubeURL": "https://www.youtube.com/embed/gDdZEj5zbR0"
+        },
+        {
+          "lessonId": 41,
+          "name": "Class 41",
+          "topic": "MADINAH BOOK 2 CLASS 37",
+          "youtubeURL": "https://www.youtube.com/embed/zCll7IQtZZQ"
+        },
+        {
+          "lessonId": 42,
+          "name": "Class 42",
+          "topic": "MADINAH book 2 class 38 - learning مصدر مُؤَوَّل",
+          "youtubeURL": "https://www.youtube.com/embed/ZZ3uNhLWysk"
+        },
+        {
+          "lessonId": 43,
+          "name": "Class 43",
+          "topic": "explaining masdar muawwal",
+          "youtubeURL": "https://www.youtube.com/embed/Id2abfHFiyA"
+        },
+        {
+          "lessonId": 44,
+          "name": "Class 44",
+          "topic": "Madinah book 2 class 39",
+          "youtubeURL": "https://www.youtube.com/embed/433Z-hunOZc"
+        },
+        {
+          "lessonId": 45,
+          "name": "Class 45",
+          "topic": "MADINAH BOOK 2 CLASS 40 - LESSON NO 17 FROM BOOK",
+          "youtubeURL": "https://www.youtube.com/embed/ugJ8Q13ogHM"
+        },
+        {
+          "lessonId": 46,
+          "name": "Class 46",
+          "topic": "Arabic vocabulary",
+          "youtubeURL": "https://www.youtube.com/embed/vWTgSuORu2A"
+        },
+        {
+          "lessonId": 47,
+          "name": "Class 47",
+          "topic": "MADINAH BOOK 2 CLASS 41 - PRACTISING ALMASDAR ALMUAWWAL PLURALS",
+          "youtubeURL": "https://www.youtube.com/embed/SmUKOXMjBoI"
+        },
+        {
+          "lessonId": 48,
+          "name": "Class 48",
+          "topic": "MADINAH BOOK 2 CLASS 42 - LESSON NO 18 FROM BOOK 2",
+          "youtubeURL": "https://www.youtube.com/embed/U924-z07nlM"
+        },
+        {
+          "lessonId": 49,
+          "name": "Class 49",
+          "topic": "MADINAH BOOK 2 CLASS 43 - LESSON NO 19 FROM BOOK 2",
+          "youtubeURL": "https://www.youtube.com/embed/7UISpgbLOv8"
+        },
+        {
+          "lessonId": 50,
+          "name": "Class 50",
+          "topic": "PRACTICING DUALS",
+          "youtubeURL": "https://www.youtube.com/embed/PU_mV1z0hGU"
+        },
+        {
+          "lessonId": 51,
+          "name": "Class 51",
+          "topic": "MADINAH BOOK 2 CLASS 44 - LESSON NO 20 FROM BOOK 2",
+          "youtubeURL": "https://www.youtube.com/embed/S39HF9t3Zd8"
+        },
+        {
+          "lessonId": 52,
+          "name": "Class 52",
+          "topic": "MADINAH BOOK 2 CLASS 45 - LEARNING ABOUT لم AND لما",
+          "youtubeURL": "https://www.youtube.com/embed/M56Vjokfu48"
+        },
+        {
+          "lessonId": 53,
+          "name": "Class 53",
+          "topic": "Madinah book 2 CLASS 46 - LESSON NO 21 FROM BOOK 2",
+          "youtubeURL": "https://www.youtube.com/embed/J6wSH7MieQQ"
+        },
+        {
+          "lessonId": 54,
+          "name": "Class 54",
+          "topic": "Arabic Vocabulary bites",
+          "youtubeURL": "https://www.youtube.com/embed/mf7pbklRVlk"
+        },
+        {
+          "lessonId": 55,
+          "name": "Class 55",
+          "topic": "Madinah Book 2 class 47 - lesson no 22 and 23 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/eRFbZK38FQw"
+        },
+        {
+          "lessonId": 56,
+          "name": "Class 56",
+          "topic": "Madinah book 2 class 48 - lesson no 24 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/RrdTfxNGa-4"
+        },
+        {
+          "lessonId": 57,
+          "name": "Class 57",
+          "topic": "Madinah Book 2 class 49 - understanding weak verbs الأجوف",
+          "youtubeURL": "https://www.youtube.com/embed/Y-g6TjP1hxQ"
+        },
+        {
+          "lessonId": 58,
+          "name": "Class 58",
+          "topic": "Madinah Book 2 class 50 - lesson no 25 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/RDFInC1wHPk"
+        },
+        {
+          "lessonId": 59,
+          "name": "Class 59",
+          "topic": "Madina book2 class 51 - learning about weak verbs المثال",
+          "youtubeURL": "https://www.youtube.com/embed/OuHfQb2BOmA"
+        },
+        {
+          "lessonId": 60,
+          "name": "Class 60",
+          "topic": "Madina book 2 class 52 - lesson no 26 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/pBP6941qiBI"
+        },
+        {
+          "lessonId": 61,
+          "name": "Class 61",
+          "topic": "Madina book2 class53, finish lesson no 26 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/A7Ch5z0Sfa0"
+        },
+        {
+          "lessonId": 62,
+          "name": "Class 62",
+          "topic": "Madina book2 class 54, learning فعل الأجوف, weak verbs",
+          "youtubeURL": "https://www.youtube.com/embed/B08HAAbkiOM"
+        },
+        {
+          "lessonId": 63,
+          "name": "Class 63",
+          "topic": "Madina book 2 class 55 - lesson no 27 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/DNjluLJ_Dlg"
+        },
+        {
+          "lessonId": 64,
+          "name": "Class 64",
+          "topic": "Madina book 2 class 56 - finishing lesson no 27 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/QEtuJOazDTU"
+        },
+        {
+          "lessonId": 65,
+          "name": "Class 65",
+          "topic": "Madina book 2 class 57 - understanding فعل الناقص، weak verbs",
+          "youtubeURL": "https://www.youtube.com/embed/vXfCDdqXBiU"
+        },
+        {
+          "lessonId": 66,
+          "name": "Class 66",
+          "topic": "Madina book 2 class 58 - understanding فعل الناقص، weak verbs in مضارع",
+          "youtubeURL": "https://www.youtube.com/embed/lV7QfyYw8pY"
+        },
+        {
+          "lessonId": 67,
+          "name": "Class 67",
+          "topic": "Madina book 2 class 59 - understanding فعل ناقص، weak verbs in منصوب and مجزوم",
+          "youtubeURL": "https://www.youtube.com/embed/EUvKSQtM_kI"
+        },
+        {
+          "lessonId": 68,
+          "name": "Class 68",
+          "topic": "Madina book 2 class 60 - lesson 28 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/6466qnM9u4M"
+        },
+        {
+          "lessonId": 69,
+          "name": "Class 69",
+          "topic": "Madina book 2 class 61 - finishing lesson 28 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/lNdb2YGNB8s"
+        },
+        {
+          "lessonId": 70,
+          "name": "Class 70",
+          "topic": "Madina book 2 class 62 - revision and learning المضعَّف",
+          "youtubeURL": "https://www.youtube.com/embed/ELH95_6aTC4"
+        },
+        {
+          "lessonId": 71,
+          "name": "Class 71",
+          "topic": "Madina book 2 class 63 - lesson no 29 from book 2",
+          "youtubeURL": "https://www.youtube.com/embed/iQJ94i6YxvU"
+        },
+        {
+          "lessonId": 72,
+          "name": "Class 72",
+          "topic": "Madina book 2 class 64 - exercises from lesson no 29 and lesson 30",
+          "youtubeURL": "https://www.youtube.com/embed/zgHt9cKZtzQ"
+        },
+        {
+          "lessonId": 73,
+          "name": "Class 73",
+          "topic": "Madina book 2 class 65 - learning about duals from lesson 30 book 2",
+          "youtubeURL": "https://www.youtube.com/embed/m_SBnIdkp0g"
+        },
+        {
+          "lessonId": 74,
+          "name": "Class 74",
+          "topic": "Madina book 2 class 66. - end of madina book 2, lesson 31",
+          "youtubeURL": "https://www.youtube.com/embed/2QQMWELzYjg"
+        }
+      ]
+    }
+  ]

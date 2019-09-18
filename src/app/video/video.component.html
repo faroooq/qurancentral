@@ -1,0 +1,109 @@
+<app-header></app-header>
+<main class="container" style="max-width: 1276px; padding-left: 0px; padding-right: 0px;
+  padding-bottom: 20px; margin-top: 20px">
+  <!--Section: Magazine v.2-->
+
+  <mdb-card style="line-height: 1.2;">
+    <!--Card content-->
+    <mdb-card-body class="dark-grey-text" style="background-color: #FAFAFA">
+      <div class="row">
+        <a *ngIf="disablePrev == false" (click)="onIndexClick(bookId - 1)"
+          routerLink="/madina-arabic-simplified/{{ bookId - 1}}/1"
+          class="col flex-unordered">
+          <i class="fa fa-hand-o-left pr-2"></i>Prev
+        </a>
+        <a *ngIf="!disablePrev == false" class="col flex-unordered grey-text">
+          <i class="fa fa-hand-o-left pr-2"></i>Prev
+        </a>
+        <div class="col flex-last" style="text-align: center">
+          <strong> BOOK {{ bookId }}</strong>
+        </div>
+        <a *ngIf="disableNext == false" (click)="onIndexClick(bookId + 1)"
+          routerLink="/madina-arabic-simplified/{{ bookId + 1}}/1"
+          class="col flex-first"
+          style="text-align: right;">
+          Next <i class="fa fa-hand-o-right pr-2"></i>
+        </a>
+        <a *ngIf="!disableNext == false" disable=true class="col flex-first
+          grey-text"
+          style="text-align: right;">
+          Next <i class="fa fa-hand-o-right pr-2"></i>
+        </a>
+      </div>
+      <!--Text-->
+    </mdb-card-body>
+    <!--/.Card content-->
+  </mdb-card>
+  <!--/.Card-->
+
+  <section class="magazine-section">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-lg-9 col-md-12 sticky-top">
+        <!-- Featured news -->
+        <div class="single-news mb-lg-0">
+          <!-- Image -->
+          <div class="view overlay rounded">
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" [src]="youtubeURL | safe"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <!-- <div class="col-4">
+            <button mdbBtn type="button" color="light-blue" block="true"
+               mdbWavesEffect>
+              <span style="font-size: 14px">Topic</span>
+            </button>
+          </div> -->
+          <div class="col-12">
+            <button mdbBtn type="button" color="info" outline="true"
+              block="true"
+              mdbWavesEffect>
+              <span style="font-size: 16px; color: #000000">{{topic}}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-12">
+        <!-- <hr class="my-3"> -->
+        <!-- Small news -->
+        <div mdbTableScroll scrollY="true" maxHeight="600" bordered="true"
+          class="container single-news mb-4 animated rollIn" *ngFor="let sylab
+          of syllabus">
+          <!-- Grid row -->
+          <hr class="my-1">
+          <div class="row" *ngFor="let lesson of sylab.lesson">
+            <!-- Grid column -->
+            <a class="col-md-12" (click)="onClick(sylab.bookId, lesson)"
+              routerLink="/madina-arabic-simplified/{{ sylab.bookId }}/{{ lesson.lessonId }}">
+              <!-- Excerpt -->
+              <p class="font-weight-bold dark-grey-text">{{lesson.name}}</p>
+              <div class="d-flex justify-content-between">
+                <div class="col-11 text-truncate pl-0 mb-3">
+                  <div class="dark-grey-text">{{lesson.topic}}</div>
+                </div>
+                <div>
+                  <i class="fa fa-play dark-grey-text"></i>
+                </div>
+              </div>
+              <hr class="my-1">
+            </a>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Small news -->
+      </div>
+      <!--Grid column-->
+    </div>
+    <!-- Grid row -->
+  </section>
+  <!--Section: Magazine v.2-->
+</main>
+<app-footer></app-footer>

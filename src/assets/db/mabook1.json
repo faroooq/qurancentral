@@ -1,0 +1,333 @@
+[
+    {
+      "bookId": 1,
+      "book": "Arabic Course #1",
+      "lesson": [
+        {
+          "lessonId": 1,
+          "name": "Class 1",
+          "topic": "Arabic Alphabets",
+          "youtubeURL": "https://www.youtube.com/embed/RXLwATGwQ-M"
+        },
+        {
+          "lessonId": 2,
+          "name": "Class 2",
+          "topic": "arabic vowel signs",
+          "youtubeURL": "https://www.youtube.com/embed/70QgvVXhJZY"
+        },
+        {
+          "lessonId": 3,
+          "name": "Class 3",
+          "topic": "WORDS IN ARABIC",
+          "youtubeURL": "https://www.youtube.com/embed/Ke2fTqws_4U"
+        },
+        {
+          "lessonId": 4,
+          "name": "Class 4",
+          "topic": "ISM CONDITION IN ARABIC SENTENCE",
+          "youtubeURL": "https://www.youtube.com/embed/1qicrwHxFw4"
+        },
+        {
+          "lessonId": 5,
+          "name": "Class 5",
+          "topic": "JUMLATUL ISMIYAH",
+          "youtubeURL": "https://www.youtube.com/embed/3zFCWUZPSuI"
+        },
+        {
+          "lessonId": 6,
+          "name": "Class 6",
+          "topic": "Demonstrative pronoun HADHA",
+          "youtubeURL": "https://www.youtube.com/embed/hxmMMGJzofo"
+        },
+        {
+          "lessonId": 7,
+          "name": "Class 7",
+          "topic": "HADHA AND DHALIKA ه",
+          "youtubeURL": "https://www.youtube.com/embed/JDe5s4knlnE"
+        },
+        {
+          "lessonId": 8,
+          "name": "Class 8",
+          "topic": "defininte noun and hamza explained",
+          "youtubeURL": "https://www.youtube.com/embed/PEznFtElsU"
+        },
+        {
+          "lessonId": 9,
+          "name": "Class 9",
+          "topic": "sentences with al",
+          "youtubeURL": "https://www.youtube.com/embed/Pf2g0s3ws"
+        },
+        {
+          "lessonId": 10,
+          "name": "Class 10",
+          "topic": "INTRODUCTION TO ARABIC PRONOUN",
+          "youtubeURL": "https://www.youtube.com/embed/WPJZkozGSjM"
+        },
+        {
+          "lessonId": 11,
+          "name": "Class 11",
+          "topic": "INTRODUCTION TO HARF 1",
+          "youtubeURL": "https://www.youtube.com/embed/6x99vb1dLoo"
+        },
+        {
+          "lessonId": 12,
+          "name": "Class 12",
+          "topic": "sentence with shibhu jumla",
+          "youtubeURL": "https://www.youtube.com/embed/Cbwxv7u2WW0"
+        },
+        {
+          "lessonId": 13,
+          "name": "Class 13",
+          "topic": "INTRODUCTION TO GENDER",
+          "youtubeURL": "https://www.youtube.com/embed/8wy2wt_RndY"
+        },
+        {
+          "lessonId": 14,
+          "name": "Class 14",
+          "topic": "questions and answers",
+          "youtubeURL": "https://www.youtube.com/embed/FECKc1OdKbY"
+        },
+        {
+          "lessonId": 15,
+          "name": "Class 15",
+          "topic": "arabic pronoun song",
+          "youtubeURL": "https://www.youtube.com/embed/7Hso9VolWGI"
+        },
+        {
+          "lessonId": 16,
+          "name": "Class 16",
+          "topic": "ARABIC PRONOUNS EXCERCISE",
+          "youtubeURL": "https://www.youtube.com/embed/nioaTioRmmk"
+        },
+        {
+          "lessonId": 17,
+          "name": "Class 17",
+          "topic": "ARABIC VOCABULARY 2",
+          "youtubeURL": "https://www.youtube.com/embed/vXl4YEvlAYE"
+        },
+        {
+          "lessonId": 18,
+          "name": "Class 18",
+          "topic": "INTRODUCTION TO فعل",
+          "youtubeURL": "https://www.youtube.com/embed/muQAxSj0III"
+        },
+        {
+          "lessonId": 19,
+          "name": "Class 19",
+          "topic": "introduction to فعل contd",
+          "youtubeURL": "https://www.youtube.com/embed/kz2AmGaJE_U"
+        },
+        {
+          "lessonId": 20,
+          "name": "Class 20",
+          "topic": "INTRODUCTION TO IDAAFA",
+          "youtubeURL": "https://www.youtube.com/embed/StuOkHQG2Do"
+        },
+        {
+          "lessonId": 21,
+          "name": "Class 21",
+          "topic": "conversation based on idaafa",
+          "youtubeURL": "https://www.youtube.com/embed/mWdzeZXLD5Q"
+        },
+        {
+          "lessonId": 22,
+          "name": "Class 22",
+          "topic": "haadihi and harf jarr li",
+          "youtubeURL": "https://www.youtube.com/embed/5LPPnLWa44k"
+        },
+        {
+          "lessonId": 23,
+          "name": "Class 23",
+          "topic": "lesson on tilka and badal",
+          "youtubeURL": "https://www.youtube.com/embed/UVNRwlMS9po"
+        },
+        {
+          "lessonId": 24,
+          "name": "Class 24",
+          "topic": "Revisiting the building blocks",
+          "youtubeURL": "https://www.youtube.com/embed/5pTByFhM2-E"
+        },
+        {
+          "lessonId": 25,
+          "name": "Class 25",
+          "topic": "ADJECTIVE AND ADJECTIVE CLAUSE",
+          "youtubeURL": "https://www.youtube.com/embed/1J6DvgKAw8E"
+        },
+        {
+          "lessonId": 26,
+          "name": "Class 26",
+          "topic": "ADJECTIVES AND ATTAHCED PRONOUN",
+          "youtubeURL": "https://www.youtube.com/embed/mu7b6D3F78g"
+        },
+        {
+          "lessonId": 27,
+          "name": "Class 27",
+          "topic": "ATTACHED PRONOUN SONG BY BROTHER ASIF",
+          "youtubeURL": "https://www.youtube.com/embed/IVX6FSFpOfI"
+        },
+        {
+          "lessonId": 28,
+          "name": "Class 28",
+          "topic": "lesson on attached pronouns AND asmaul khamsa",
+          "youtubeURL": "https://www.youtube.com/embed/O9H7hYcSk3E"
+        },
+        {
+          "lessonId": 29,
+          "name": "Class 29",
+          "topic": "LESSON ON ATTACHED PRONOUNS CONTD",
+          "youtubeURL": "https://www.youtube.com/embed/Cqy48gHtCTs"
+        },
+        {
+          "lessonId": 30,
+          "name": "Class 30",
+          "topic": "introduction to mafoolun bihi",
+          "youtubeURL": "https://www.youtube.com/embed/_QX4vpkkKgY"
+        },
+        {
+          "lessonId": 31,
+          "name": "Class 31",
+          "topic": "LEARNING MUBTADA KHABAR",
+          "youtubeURL": "https://www.youtube.com/embed/4l-qhHrZedw"
+        },
+        {
+          "lessonId": 32,
+          "name": "Class 32",
+          "topic": "UNDERSTANDING CASE ENDINGSS",
+          "youtubeURL": "https://www.youtube.com/embed/VjgugKl9HnY"
+        },
+        {
+          "lessonId": 33,
+          "name": "Class 33",
+          "topic": "simple conversations using feminine nouns",
+          "youtubeURL": "https://www.youtube.com/embed/ndDzQLPr0Io"
+        },
+        {
+          "lessonId": 34,
+          "name": "Class 34",
+          "topic": "PRACTICISING FEMININE فعل AND اسم موصول",
+          "youtubeURL": "https://www.youtube.com/embed/2I57PINd9VY"
+        },
+        {
+          "lessonId": 35,
+          "name": "Class 35",
+          "topic": "INTRODUCTION TO PLURALS",
+          "youtubeURL": "https://www.youtube.com/embed/uvcb_ZfLs2U"
+        },
+        {
+          "lessonId": 36,
+          "name": "Class 36",
+          "topic": "CONVERSATIONS UNSING MASCULINE PLURALS",
+          "youtubeURL": "https://www.youtube.com/embed/y4Yb0t_7CH0"
+        },
+        {
+          "lessonId": 37,
+          "name": "Class 37",
+          "topic": "lesson masculine and feminine plurals",
+          "youtubeURL": "https://www.youtube.com/embed/IN3w20yjQ4I"
+        },
+        {
+          "lessonId": 38,
+          "name": "Class 38",
+          "topic": "lesson on هَؤلاء AND أولئك",
+          "youtubeURL": "https://www.youtube.com/embed/Jy1KB_DuZUY"
+        },
+        {
+          "lessonId": 39,
+          "name": "Class 39",
+          "topic": "Understanding new نعت and بدل",
+          "youtubeURL": "https://www.youtube.com/embed/JMTCPZ9fEQs"
+        },
+        {
+          "lessonId": 40,
+          "name": "Class 40",
+          "topic": "understanding نعت and أيُّ",
+          "youtubeURL": "https://www.youtube.com/embed/AfWD6wkL5C4"
+        },
+        {
+          "lessonId": 41,
+          "name": "Class 41",
+          "topic": "Lesson No. 15 madinah book",
+          "youtubeURL": "https://www.youtube.com/embed/4ClJmsatVZ8"
+        },
+        {
+          "lessonId": 42,
+          "name": "Class 42",
+          "topic": "status of sound plurals and simple analysis",
+          "youtubeURL": "https://www.youtube.com/embed/-rdw8_bUu9Y"
+        },
+        {
+          "lessonId": 43,
+          "name": "Class 43",
+          "topic": "NON HUMAN BROKEN PLURALS",
+          "youtubeURL": "https://www.youtube.com/embed/sFn1mBFRuUs"
+        },
+        {
+          "lessonId": 44,
+          "name": "Class 44",
+          "topic": "practising the concept of كل جمع مؤنث",
+          "youtubeURL": "https://www.youtube.com/embed/5IRgstxby2g"
+        },
+        {
+          "lessonId": 45,
+          "name": "Class 45",
+          "topic": "understanding نعت and introduction to duals",
+          "youtubeURL": "https://www.youtube.com/embed/xGk7QnNAEJU"
+        },
+        {
+          "lessonId": 46,
+          "name": "Class 46",
+          "topic": "PRACTICE OF DUALS AIND INTRODUCTION TO تمييز",
+          "youtubeURL": "https://www.youtube.com/embed/PtUL--rGSmo"
+        },
+        {
+          "lessonId": 47,
+          "name": "Class 47",
+          "topic": "introduction to numbers",
+          "youtubeURL": "https://www.youtube.com/embed/g6FDGi8dEt0"
+        },
+        {
+          "lessonId": 48,
+          "name": "Class 48",
+          "topic": "lesson on numbers",
+          "youtubeURL": "https://www.youtube.com/embed/_PaEKm5egFE"
+        },
+        {
+          "lessonId": 49,
+          "name": "Class 49",
+          "topic": "ARABIC BASIC GRAMMAR QUIZ",
+          "youtubeURL": "https://www.youtube.com/embed/c8-Uk5yoo1k"
+        },
+        {
+          "lessonId": 50,
+          "name": "Class 50",
+          "topic": "Lesson on numbers with feminine nouns",
+          "youtubeURL": "https://www.youtube.com/embed/ewIQBrMoAI4"
+        },
+        {
+          "lessonId": 51,
+          "name": "Class 51",
+          "topic": "LESSON NO 21 FROM MADINAH BOOK 1مدرستي",
+          "youtubeURL": "https://www.youtube.com/embed/jpLo9_DMbTY"
+        },
+        {
+          "lessonId": 52,
+          "name": "Class 52",
+          "topic": "ممنوع من الصرف diptotes",
+          "youtubeURL": "https://www.youtube.com/embed/OBJNkiTQ0cA"
+        },
+        {
+          "lessonId": 53,
+          "name": "Class 53",
+          "topic": "DIPTOTE CONTINUED",
+          "youtubeURL": "https://www.youtube.com/embed/_nbpHgePRg4"
+        },
+        {
+          "lessonId": 54,
+          "name": "Class 54",
+          "topic": "Arabic vocabulary",
+          "youtubeURL": "https://www.youtube.com/embed/DBqmV7Tppz8"
+        }
+      ]
+    }
+  ]
+  

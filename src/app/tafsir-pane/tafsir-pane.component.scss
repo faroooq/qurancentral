@@ -1,0 +1,37 @@
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    #mat-scroll-spy { display: block;}  /* show it on small screens */
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 1024px) {
+    #mat-scroll-spy { display: none;}   /* hide it elsewhere */
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #mat-scroll-spy { display: block;}   /* hide it elsewhere */
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 400px) {
+    #mat-scroll-spy { display: none;}   /* hide it elsewhere */
+  }
+
+  .mdb-scrollspy-ex .nav-item {
+    width: 100%;
+  }
+  
+  .mdb-scrollspy-ex a {
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    padding: 0 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: black;
+  }
+  
+  .mdb-scrollspy-ex-example {
+    height: 200px;
+  }
+
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }

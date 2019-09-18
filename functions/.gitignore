@@ -1,0 +1,21 @@
+## Don't ignore all compiled JavaScript files, need to keep `cp-angular.js`.
+#**/*.js
+#**/*.js.map
+
+# tsconfig.json `outDir`.
+/lib
+
+# Browser version, copied by `cp-angular.js`.
+/dist/browser/
+
+# webpack.server.config.js `app` library.
+/dist/server.js
+/dist/server/
+
+# Firebase log files.
+/firebase-debug.log
+
+# Typescript v1 declaration files
+typings/
+
+node_modules/

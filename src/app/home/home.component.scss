@@ -1,0 +1,52 @@
+/* Required for full background image */
+
+html,
+body,
+header,
+.view {
+  min-height: 100vh !important;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #FFFFFF !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #FFFFFF !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+.text-font-h1 {
+    font-size: 38px;
+    color: #777777;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+

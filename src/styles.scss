@@ -1,0 +1,31 @@
+@import "~ng-uikit-pro-standard/assets/scss/core/colors";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables-pro";
+
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_timelines-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_timeline-pro.scss";
+
+@import "~ng-uikit-pro-standard/assets/scss/core/colors";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables-pro";
+
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_ecommerce-pro.scss"; // Import only when you want to use the Products examples
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_pricing-pro.scss"; // Import only when you want to use the Pricing examples
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Pre built material themes.
+// @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+// @import '@angular/material/prebuilt-themes/purple-green.css';
+
+@import './assets/styles/material-theme';
+body{
+    margin:0;
+}
+
+@font-face {
+    font-family: 'QalamQuran';
+    src: url('./assets/styles/AlQalamQuran.ttf')  format('truetype');
+  }
+
+
