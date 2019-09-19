@@ -61,3 +61,12 @@ https://medium.com/@geeksamu/build-dynamic-themes-for-angular-material-3b4ef118b
 Quran Fonts:
 ===========
 http://quran.mursil.com/Web-Print-Publishing-Quran-Text-Graphics-Fonts-and-Downloads/fonts-optimized-for-quran
+
+How to setup Google Analytics:
+=============================
+https://medium.com/analytics-for-humans/setting-up-google-analytics-correctly-4f564b739d99
+
+
+domain verification details:
+============================
+https://www.google.com/webmasters/verification/home?hl=en&pli=1
