@@ -21,9 +21,8 @@ const appRoutes: Routes = [
     canActivate: [SeoGuard],
     data: {
       title: ['Quran Central'],
-      desc: 'The beauty, the Eloquence, the Miracle and the Divine Wisdom of the Qur’an will '
-        + 'penetrate the innermost depth of your heart and you will experience the joy and happiness '
-        + 'which cannot be expressed but can only be felt in the Believer’s Heart.',
+      desc: 'QuranCentral is an unique portal providing the Authentic Islamic Knowledge'
+        + ' designed beautifully. Quran in different languages, Tafsir, Arabic, Quran Audio, Arabic Grammar...',
       keywords: 'quran, tafsir, arabic, madina, simplified, hadith, muslim, islam, central, furqan, tafheem, mariful quran, ibn kathir, moududi'
     }
   },
@@ -33,9 +32,8 @@ const appRoutes: Routes = [
     canActivate: [SeoGuard],
     data: {
       title: ['Quran Translation'],
-      desc: 'The beauty, the Eloquence, the Miracle and the Divine Wisdom of the Qur’an will '
-        + 'penetrate the innermost depth of your heart and you will experience the joy and happiness '
-        + 'which cannot be expressed but can only be felt in the Believer’s Heart.',
+      desc: 'QuranCentral is an unique portal providing the Authentic Islamic Knowledge'
+        + ' designed beautifully. Quran in different languages, Tafsir, Arabic, Quran Audio, Arabic Grammar...',
       keywords: 'quran, tafsir, arabic, madina, simplified, hadith, muslim, islam, central, furqan, tafheem, mariful quran, ibn kathir, moududi'
     }
   },
@@ -45,9 +43,8 @@ const appRoutes: Routes = [
     canActivate: [SeoGuard],
     data: {
       title: ['Quran Tafsir'],
-      desc: 'The beauty, the Eloquence, the Miracle and the Divine Wisdom of the Qur’an will '
-        + 'penetrate the innermost depth of your heart and you will experience the joy and happiness '
-        + 'which cannot be expressed but can only be felt in the Believer’s Heart.',
+      desc: 'QuranCentral is an unique portal providing the Authentic Islamic Knowledge'
+        + ' designed beautifully. Quran in different languages, Tafsir, Arabic, Quran Audio, Arabic Grammar...',
       keywords: 'quran, tafsir, arabic, madina, simplified, hadith, muslim, islam, central, furqan, tafheem, mariful quran, ibn kathir, moududi'
     }
   },
