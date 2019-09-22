@@ -27,10 +27,10 @@
 
                     <mat-form-field style="margin-left: 10px">
                         <mat-label>Select Chapter</mat-label>
-                        <mat-select [(ngModel)]="chapter" (ngModelChange)="goSurah()">
-                            <mat-option *ngFor="let chapter of chapters" [value]="chapter.name">
-                                <span>{{chapter.number}}&nbsp;&nbsp;</span>
-                                <span>{{chapter.name}}</span>
+                        <mat-select [(ngModel)]="chapter" (ngModelChange)="goSurah(chapter.number)">
+                            <mat-option *ngFor="let chapter of chapters" [value]="chapter.number">
+                                <span>{{chapter.number}}.&nbsp;&nbsp;</span>
+                                <span>{{chapter.englishName}}</span>
                             </mat-option>
                         </mat-select>
                     </mat-form-field>

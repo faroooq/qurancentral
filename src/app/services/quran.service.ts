@@ -3,9 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, pipe, forkJoin } from 'rxjs';
 import { map, filter, scan, retry, catchError } from 'rxjs/operators';
 import { SurahList } from '../models/surahlist.model';
-import { SurahAdapter } from 'src/adapters/surah.adapter';
-import { SurahIntroInfo } from '../models/surahintro.info.model';
-import { SurahIntroAdapter } from 'src/adapters/surahintro.adapter';
 
 // const headers = new HttpHeaders({ 'Content-Type': 'text/plain' });
 // headers.set('Access-Control-Allow-Origin', '*');
@@ -15,41 +12,40 @@ import { SurahIntroAdapter } from 'src/adapters/surahintro.adapter';
 @Injectable()
 export class QuranService {
 
-    quran_path = '../../assets/db/';
-    chapterInfo = '../../assets/db/moududi_intro.json';
+    quran_path = '../../assets/db/quran-trans/';
+    chapterInfo = 'https://raw.githubusercontent.com/faroooq/qc_db/master/quran-translations/ar/muyassar/2_baqara.json';
+    chapterInfo1 = 'https://raw.githubusercontent.com/faroooq/qc_db/master/quran-translations/en/sahih/2_baqara.json';
+    // chapterInfo = '../../assets/db/quran-trans/baqara.json';
+    surahList = 'https://raw.githubusercontent.com/faroooq/qc_db/master/surah-list.json';
 
-    constructor(
-        private http: HttpClient,
-        private surahAdapter: SurahAdapter,
-        private surahIntroAdapter: SurahIntroAdapter) { }
+    constructor(private http: HttpClient) { }
 
-    getSurahList(surah_name): Observable<any> {
-
-        let quran = this.http.get(this.quran_path + surah_name + '.json').pipe(
-            map((data) => {
-                // console.log('Data : ' + JSON.stringify(data));
-                // return this.surahAdapter.adapt(data);
+    getSurahInfo(surahName, translation): Observable<any> {
+        if (translation === null || translation === undefined) {
+            translation = 'ar_muyassar';
+        }
+        let arabic = this.http.get(this.chapterInfo).pipe(
+            map((data: any) => {
+                // console.log(data);
                 return data;
             }),
         );
-        // let suraIntroList = this.http.get(this.chapterInfo).pipe(
-        //     map((data) => {
-        //         // return this.surahIntroAdapter.adapt(data);
-        //         // console.log("Chapter Info: " + JSON.stringify(data));
-        //         return data;
-        //     }),
-        // );
-        return forkJoin(quran);
-        // return suraList;
+        let english = this.http.get(this.chapterInfo1).pipe(
+            map((data: any) => {
+                // console.log(data);
+                return data;
+            }),
+        );
+        return forkJoin(arabic, english);
     }
 
-    // getSurah(): Observable<SurahIntroInfo> {
-
-    //     return this.http.get(this.chapterInfo).pipe(
-    //         map((data: SurahIntroInfo) => {
-    //             return data;
-    //         }),
-    //     );
-    // }
+    getSurahList(): Observable<any> {
+        let surahs = this.http.get(this.surahList).pipe(
+            map((data: any) => {
+                return data;
+            }),
+        );
+        return forkJoin(surahs);
+    }
 }
 

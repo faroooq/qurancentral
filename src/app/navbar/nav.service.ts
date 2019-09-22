@@ -8,7 +8,7 @@ export class NavService {
     {label: 'Home', path: '/home', iconName: 'home'},
     {label: 'Quran', path: '/quran', iconName: 'menu_book'},
     {label: 'Tafsir', path: '/tafsir', iconName: 'school'},
-    {label: 'Arabic', path: '/madina-arabic-simplified', iconName: 'video_label'}
+    {label: 'Arabic', path: '/madina-arabic-simplified/1/1', iconName: 'video_label'}
     // {label: 'Blog', path: '/blog', iconName: 'person_pin'}
     // {label: 'Golf', path: 'fake', iconName: 'golf_course'},
     // {label: 'Spa', path: 'fake', iconName: 'spa'},

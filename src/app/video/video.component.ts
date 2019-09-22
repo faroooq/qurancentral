@@ -70,7 +70,6 @@ export class VideoComponent implements OnInit {
       this.videoService.getMABook2()
         .subscribe((data) => {
           this.syllabus = data;
-          // console.log('User......' + JSON.stringify(this.syllabus));
         });
 
       this.disableNext = false;
@@ -86,7 +85,6 @@ export class VideoComponent implements OnInit {
       this.videoService.getMABook3()
         .subscribe((data) => {
           this.syllabus = data;
-          // console.log('User......' + JSON.stringify(this.syllabus));
         });
 
       this.disableNext = true;
@@ -104,7 +102,6 @@ export class VideoComponent implements OnInit {
     // this.videoService.getMABQuiz(this.bookId, this.lessonId)
     //   .subscribe((data) => {
     //     this.quiz = data;
-    //     // console.log(JSON.stringify(this.quiz));
     //   });
   }
 
@@ -130,7 +127,6 @@ export class VideoComponent implements OnInit {
     // this.videoService.getMABQuiz(bookId, lesson.lessonId)
     //   .subscribe((data) => {
     //     this.quiz = data;
-    //     // console.log(JSON.stringify(this.quiz));
     //   });
   }
 

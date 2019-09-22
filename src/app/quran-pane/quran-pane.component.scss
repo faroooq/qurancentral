@@ -6,4 +6,17 @@
 mat-slider {
   width: 100%;
 }
+
+.font-medium {
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  // color: rgba(0, 0, 0, 0.68);
+  font-size: 21px; 
+  line-height: 1.58;
+  letter-spacing: -0.004em;
+}
   
+.font-qalam {
+  font-family: 'QalamQuran'; 
+  // color: rgba(0, 0, 0, 0.68);
+  word-spacing: 3px;
+}

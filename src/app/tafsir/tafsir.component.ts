@@ -5,8 +5,6 @@ import { map } from 'rxjs/operators';
 import { ThemeService } from '../services/theme.service';
 import { Observable } from 'rxjs';
 import {FormControl} from '@angular/forms';
-import { QuranService } from '../services/quran.service';
-import { SurahListData } from '../models/surahlist.model';
 import { ModalComponent } from '../modal/modal.component';
 import { MDBModalService, MDBModalRef } from 'ng-uikit-pro-standard';
 

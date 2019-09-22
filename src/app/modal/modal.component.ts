@@ -17,7 +17,6 @@ export class ModalComponent implements OnInit {
 
   ngOnInit() {
 
-    // console.log('ModalRef : ' + JSON.stringify(this.modalRef));
   }
 
 }

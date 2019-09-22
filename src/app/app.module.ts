@@ -10,7 +10,7 @@ import { BlogComponent } from './blog/blog.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideoComponent } from './video/video.component';
-import { SafePipe } from './safe.pipe';
+import { SafePipe } from './pipe/safe.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { SeoGuard } from './seo-service/seo.guard';
 import { SeoVideoIdGuard } from './seo-service/seo.video.id.guard';
@@ -20,10 +20,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-import { SurahAdapter } from 'src/adapters/surah.adapter';
 import { QuranService } from './services/quran.service';
 import { VideoService } from './services/video.service';
-import { SurahIntroAdapter } from 'src/adapters/surahintro.adapter';
 import { ReadMoreComponent } from './utils/read.more.component';
 import { ModalComponent } from './modal/modal.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -35,6 +33,11 @@ import { QuranPaneComponent } from './quran-pane/quran-pane.component';
 import { ThemeService } from './services/theme.service';
 import { TafsirComponent } from './tafsir/tafsir.component';
 import { TafsirPaneComponent } from './tafsir-pane/tafsir-pane.component';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from 'src/environments/environment.prod';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { ArraySortPipe } from './pipe/arraysort.pipe';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,7 @@ import { TafsirPaneComponent } from './tafsir-pane/tafsir-pane.component';
     FooterComponent,
     VideoComponent,
     SafePipe,
+    ArraySortPipe,
     HomeComponent,
     ReadMoreComponent,
     ModalComponent,
@@ -63,7 +67,10 @@ import { TafsirPaneComponent } from './tafsir-pane/tafsir-pane.component';
     ReactiveFormsModule,
     HttpClientModule,
     AngularMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    // AngularFireModule.initializeApp(environment.firebaseConfig),
+    // AngularFireDatabaseModule,
+    // AngularFirestoreModule
     // TreeRendererDirective
   ],
   entryComponents: [ModalComponent],
@@ -74,10 +81,8 @@ import { TafsirPaneComponent } from './tafsir-pane/tafsir-pane.component';
     SeoService,
     HttpClient,
     HttpClientModule,
-    SurahAdapter,
     QuranService,
     VideoService,
-    SurahIntroAdapter,
     NavService,
     ThemeService
   ],

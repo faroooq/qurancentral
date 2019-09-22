@@ -7,44 +7,56 @@
         <div class="container">
             <!--Grid row-->
             <div class="row">
-                <!--Grid column-->
-                <div class="col-md-12 mb-4 text-center">
-                    <h1 style="font-size: 38px; color: #777777; font-family: sans-serif; font-weight: bolder;"
-                        class="h1-reponsive text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8 mb-4 text-center">
+                    <h1 style="font-size: 50px; color: #777777; font-family: sans-serif; font-weight: bolder;"
+                        class="h1-reponsive text-uppercase font-weight-bold mb-0 wow fadeInDown"
                         data-wow-delay="0.3s"><strong>Quran Central</strong></h1>
                     <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
 
-                    <!-- <form class="form-inline md-form mr-auto mb-4">
-                        <div class="col-md-12">
-                            <div class="col-md-6">
-                                <input style="" class="form-control mr-sm-2" type="text" placeholder="Search"
-                                    aria-label="Search">
-                            </div>
-                            <div class="col-md-6">
-                                <button mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light"
-                                    mdbWavesEffect type="submit">Search</button>
-                            </div>
-                        </div>
-                    </form> -->
-
-                    <button routerLink="/quran" mdbBtn type="button" color="default" outline="true" mdbWavesEffect>Read
-                        Quran</button>
-                    <button routerLink="/tafsir" mdbBtn type="button" color="secondary" outline="true"
-                        mdbWavesEffect>Quran Tafsir</button>
-                    <button routerLink="/madina-arabic-simplified/1/1" mdbBtn type="button" color="success"
-                        outline="true" mdbWavesEffect>Madina Arabic Simplified</button>
-                    <a target="_blank" href="http://corpus.quran.com/treebank.jsp" mdbBtn type="button" color="info"
-                        outline="true" mdbWavesEffect>Linguistic Quran</a>
-                    <button routerLink="/kids" mdbBtn type="button" color="warning" outline="true" mdbWavesEffect> Quran
-                        Kids</button>
-                    <button routerLink="/blog" mdbBtn type="button" color="danger" outline="true" mdbWavesEffect>Blog
-                        Central</button>
-                    <button routerLink="/grammar" mdbBtn type="button" color="primary" outline="true"
-                        mdbWavesEffect>Quran Grammar</button>
-                    <button routerLink="/dictonary" mdbBtn type="button" color="secondary" outline="true"
-                        mdbWavesEffect>Quran Dictonary</button>
+                    <!-- Large outline input -->
+                    <div class="md-form md-outline form-lg">
+                        <input id="form-lg" class="form-control form-control-lg" type="text" mdbInput>
+                        <label for="form-lg">Search your Favourite</label>
+                    </div>
+                    <div>
+                        <button size="sm" routerLink="/quran" mdbBtn type="button" color="default" outline="true"
+                            mdbWavesEffect>
+                            <p style="font-size: 13px; margin-bottom: 0rem;">Read Quran</p>
+                        </button>
+                        <button size="sm" routerLink="/tafsir" mdbBtn type="button" color="secondary" outline="true"
+                            mdbWavesEffect>
+                            <p style="font-size: 13px; margin-bottom: 0rem;">Quran Tafsir</p>
+                        </button>
+                        <button size="sm" routerLink="/madina-arabic-simplified/1/1" mdbBtn type="button"
+                            color="success" outline="true" mdbWavesEffect>
+                            <p style="font-size: 13px; margin-bottom: 0rem;">Madina Arabic</p>
+                        </button>
+                        <button size="sm" routerLink="/kids" mdbBtn type="button" color="warning" outline="true"
+                            mdbWavesEffect>
+                            <p style="font-size: 13px; margin-bottom: 0rem;">Quran Kids</p>
+                        </button>
+                        <a size="sm" target="_blank" href="http://corpus.quran.com/treebank.jsp" mdbBtn type="button"
+                            color="info" outline="true" mdbWavesEffect>
+                            <p style="font-size: 13px; margin-bottom: 0rem;">Quran Grammar</p>
+                        </a>
+                        <button size="sm" routerLink="/blog" mdbBtn type="button" color="danger" outline="true"
+                            mdbWavesEffect>
+                            <p style="font-size: 13px; margin-bottom: 0rem;">Blog Central</p>
+                        </button>
+                        <!-- <button size="sm" routerLink="/grammar" mdbBtn type="button" color="primary" outline="true"
+                        mdbWavesEffect><p style="font-size: 13px; margin-bottom: 0rem;">Quran Grammar</p></button> -->
+                        <button size="sm" routerLink="/dictonary" mdbBtn type="button" color="secondary" outline="true"
+                            mdbWavesEffect>
+                            <p style="font-size: 13px; margin-bottom: 0rem;">Quran Dictonary</p>
+                        </button>
+                        <!-- <button size="sm" routerLink="/podcast" mdbBtn type="button" color="default" outline="true" mdbWavesEffect>
+                        <p style="font-size: 13px; margin-bottom: 0rem;">Quran Podcast</p></button> -->
+                    </div>
                 </div>
-                <!--Grid column-->
+                <div class="col-sm-2">
+                </div>
             </div>
             <!--Grid row-->
         </div>

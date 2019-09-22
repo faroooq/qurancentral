@@ -1,8 +1,6 @@
 import { Component, OnInit, Inject, HostListener, Renderer2, OnDestroy } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { QuranService } from '../services/quran.service';
-import { SurahList, SurahListData } from '../models/surahlist.model';
-import { SurahIntroInfo, ChapterInfo } from '../models/surahintro.info.model';
 import { MDBModalRef, MDBModalService } from 'ng-uikit-pro-standard';
 import { ModalComponent } from '../modal/modal.component';
 import { Subscription } from 'rxjs';
@@ -15,8 +13,6 @@ import { Subscription } from 'rxjs';
 export class HomeComponent implements OnInit {
 
   elements: any[] = [];
-  chapterInfo: ChapterInfo;
-  surahList: SurahListData[] = [];
   modalRef: MDBModalRef;
   sub: Subscription;
 
@@ -47,15 +43,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     // this.elements = Array.from(this.document.documentElement.querySelectorAll('.timeline-animated li'));
-
-    // this.sub = this.quranservice.getSurahList('')
-    //   .subscribe((data) => {
-    //     for (let i = 0; i < data[0].data.length, data[1].chapter_info.length; i++) {
-    //       this.surahList.push(new SurahListData(data[0].data[i].number, data[0].data[i].name, data[0].data[i].englishName,
-    //         data[0].data[i].englishNameTranslation, data[0].data[i].numberOfAyahs, data[0].data[i].revelationType, data[1].chapter_info[i].text));
-    //       // console.log(JSON.stringify(data[1].chapter_info[i].text));
-    //     }
-    //   });
   }
 
   // range: any = 0;

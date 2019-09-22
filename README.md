@@ -20,7 +20,12 @@ firebase login
 firebase init
 firebase deploy
 
+json-to-firestore:
+=================
+https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57
+
 Tree UI:
+=======
 https://bootsnipp.com/snippets/Q0ppE
 
 
@@ -70,3 +75,13 @@ https://medium.com/analytics-for-humans/setting-up-google-analytics-correctly-4f
 domain verification details:
 ============================
 https://www.google.com/webmasters/verification/home?hl=en&pli=1
+
+Google Cloud Pricing:
+====================
+https://cloud.google.com/pricing/list
+https://firebase.google.com/pricing?authuser=0#blaze-calculator
+
+
+Github Content URL:
+===================
+https://raw.githubusercontent.com/faroooq/quran_json/master/baqara.json

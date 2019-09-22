@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, forkJoin } from 'rxjs';
-import { SurahList } from '../models/surahlist.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +9,9 @@ export class VideoService {
 
   constructor(public http: HttpClient) { }
 
-  book1 = '../../assets/db/mabook1.json';
-  book2 = '../../assets/db/mabook2.json';
-  book3 = '../../assets/db/mabook3.json';
+  book1 = '../../assets/db/madina-arabic/mabook1.json';
+  book2 = '../../assets/db/madina-arabic/mabook2.json';
+  book3 = '../../assets/db/madina-arabic/mabook3.json';
 
 
   getMABook1() {

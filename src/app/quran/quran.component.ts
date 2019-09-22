@@ -6,6 +6,8 @@ import { ThemeService } from '../services/theme.service';
 import { Observable } from 'rxjs';
 import { FormControl } from '@angular/forms';
 import { QuranService } from '../services/quran.service';
+import { SurahList } from '../models/surahlist.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-quran',
@@ -22,12 +24,16 @@ export class QuranComponent implements OnInit {
   isThemeDark: Observable<boolean>;
   selected: string;
   formatLabel: string;
-  
+
   chapter: string;
 
-  chapters: Array<any>;
+  chapters: SurahList[] = [];
 
-  public constructor(private bpo: BreakpointObserver, private themeService: ThemeService) { }
+  public constructor(
+    private quranservice: QuranService, 
+    private bpo: BreakpointObserver, 
+    private themeService: ThemeService,
+    public router: Router) { }
 
   public ngOnInit(): void {
     this.isThemeDark = this.themeService.isThemeDark;
@@ -39,41 +45,19 @@ export class QuranComponent implements OnInit {
         this.determineSidenavMode();
         this.determineLayoutGap();
       });
-    this.chapters = [
-      { number: '1', name: 'Surah Baqara' },
-      { number: '2', name: 'Surah Baqara' },
-      { number: '3', name: 'Surah Baqara' },
-      { number: '4', name: 'Surah Baqara' },
-      { number: '5', name: 'Surah Baqara' },
-      { number: '6', name: 'Surah Baqara' },
-      { number: '7', name: 'Surah Baqara' },
-      { number: '8', name: 'Surah Baqara' },
-      { number: '9', name: 'Surah Baqara' },
-      { number: '10', name: 'Surah Baqara' },
-      { number: '11', name: 'Surah Baqara' },
-      { number: '12', name: 'Surah Baqara' },
-      { number: '13', name: 'Surah Baqara' },
-      { number: '14', name: 'Surah Baqara' },
-      { number: '15', name: 'Surah Baqara' },
-      { number: '16', name: 'Surah Baqara' },
-      { number: '17', name: 'Surah Baqara' },
-      { number: '18', name: 'Surah Baqara' },
-      { number: '19', name: 'Surah Baqara' },
-      { number: '20', name: 'Surah Baqara' },
-      { number: '21', name: 'Surah Baqara' },
-      { number: '22', name: 'Surah Baqara' },
-      { number: '23', name: 'Surah Baqara' },
-      { number: '24', name: 'Surah Baqara' },
-      { number: '25', name: 'Surah Baqara' },
-      { number: '26', name: 'Surah Baqara' },
-      { number: '27', name: 'Surah Baqara' },
-      { number: '28', name: 'Surah Baqara' },
-      { number: '29', name: 'Surah Baqara' },
-      { number: '30', name: 'Surah Baqara' }
-    ]
+
+    this.quranservice.getSurahList().subscribe((data) => {
+      for (var i = 0; i < data[0].data.length; i++) {
+        this.chapters.push(new SurahList(
+          data[0].data[i].number, data[0].data[i].name,
+          data[0].data[i].englishName, data[0].data[i].englishNameTranslation,
+          data[0].data[i].numberOfAyahs, data[0].data[i].revelationType));
+      }
+    });
   }
 
-  goSurah() {
+  goSurah(chapter: string) {
+    this.router.navigate(['quran', this.chapter]);
     console.log('selected :: ' + this.chapter);
   }
 

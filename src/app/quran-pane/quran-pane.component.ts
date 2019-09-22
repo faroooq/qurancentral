@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { QuranService } from '../services/quran.service';
+import { Observable } from 'rxjs';
+import { ThemeService } from '../services/theme.service';
+import { SurahInfo } from '../models/surahinfo.model';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-quran-pane',
@@ -8,21 +12,32 @@ import { QuranService } from '../services/quran.service';
 })
 export class QuranPaneComponent implements OnInit {
 
-  surahList: any;
+  surahList: SurahInfo[] = [];
+  isThemeDark: Observable<boolean>;
+  surahId: number;
 
-  constructor(private quranservice: QuranService) { }
+  constructor(
+    private quranservice: QuranService, 
+    private themeService: ThemeService,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.quranservice.getSurahList('1.fatiha').subscribe((data) => {
-      // for (let i = 0; i < data[0].data.length, data[1].chapter_info.length; i++) {
-      //   this.surahList.push(new SurahListData(data[0].data[i].number, data[0].data[i].name, data[0].data[i].englishName,
-      //     data[0].data[i].englishNameTranslation, data[0].data[i].numberOfAyahs, data[0].data[i].revelationType, data[1].chapter_info[i].text));
-      //   // console.log(JSON.stringify(data[1].chapter_info[i].text));
-      // }
-      // for(let i=0; i< data[0].data.length; i++) {
-        
-      // }
-      this.surahList = data[0];
+
+    this.route.params.forEach((params: Params) => {
+      this.surahId = +params['surahId'];
+      console.log(this.surahId)
+    });
+    // this.isThemeDark = this.themeService.isThemeDark;
+    this.quranservice.getSurahInfo('baqara', 'ar_muyassar').subscribe((data: SurahInfo) => {
+      for (var i = 0; data[0].aya.length, data[1].aya.length; i++) {
+        let index = data[0].aya[i].index;
+        // console.log(index)
+        let arabic = data[0].aya[i].text;
+        // console.log(arabic)
+        let english = data[1].aya[i].text;
+        this.surahList.push(new SurahInfo(index, arabic, english));
+        // console.log(this.surahList)
+      }
     });
   }
 
@@ -30,11 +45,13 @@ export class QuranPaneComponent implements OnInit {
     if (!value) {
       return 0;
     }
-
     if (value >= 1000) {
       return 'V' + Math.round(value / 1000);
     }
-
     return value;
+  }
+
+  toggleDarkTheme(checked: boolean) {
+    this.themeService.setDarkTheme(checked);
   }
 }
