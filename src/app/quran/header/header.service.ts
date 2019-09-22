@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {of, Observable} from 'rxjs';
-import {NavItem} from './nav-item';
+import {HeaderItem} from './header-item';
 
 @Injectable()
-export class NavService {
+export class HeaderService {
   private navItems = [
     {label: 'Home', path: '/home', iconName: 'home'},
     {label: 'Quran', path: '/quran', iconName: 'menu_book'},
@@ -21,7 +21,7 @@ export class NavService {
 
   constructor() { }
 
-  getNavItems(): Observable<NavItem[]> {
+  getNavItems(): Observable<HeaderItem[]> {
     return of(this.navItems);
   }
 }

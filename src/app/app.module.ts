@@ -7,7 +7,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule, FormBuilder, ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 import { ArabicComponent } from './arabic/arabic.component';
 import { BlogComponent } from './blog/blog.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './quran/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideoComponent } from './video/video.component';
 import { SafePipe } from './pipe/safe.pipe';
@@ -24,20 +24,16 @@ import { QuranService } from './services/quran.service';
 import { VideoService } from './services/video.service';
 import { ReadMoreComponent } from './utils/read.more.component';
 import { ModalComponent } from './modal/modal.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { AngularMaterialModule } from './material.module';
-import { QuranComponent } from './quran/quran.component';
-import { NavService } from './navbar/nav.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { QuranPaneComponent } from './quran-pane/quran-pane.component';
 import { ThemeService } from './services/theme.service';
 import { TafsirComponent } from './tafsir/tafsir.component';
 import { TafsirPaneComponent } from './tafsir-pane/tafsir-pane.component';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { environment } from 'src/environments/environment.prod';
-import { AngularFireModule } from "@angular/fire";
-import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { ArraySortPipe } from './pipe/arraysort.pipe';
+import { HeaderService } from './quran/header/header.service';
+import { QuranPaneComponent } from './quran/quran-pane/quran-pane.component';
+import { QuranLeftComponent } from './quran/quran-left/quran-left.component';
+import { QuranMainComponent } from './quran/quran-main/quran-main.component';
 
 @NgModule({
   declarations: [
@@ -52,11 +48,12 @@ import { ArraySortPipe } from './pipe/arraysort.pipe';
     HomeComponent,
     ReadMoreComponent,
     ModalComponent,
-    NavbarComponent,
-    QuranComponent,
+    HeaderComponent,
+    QuranLeftComponent,
     QuranPaneComponent,
     TafsirComponent,
-    TafsirPaneComponent
+    TafsirPaneComponent,
+    QuranMainComponent
   ],
   imports: [
     AppRoutingModule,
@@ -83,7 +80,7 @@ import { ArraySortPipe } from './pipe/arraysort.pipe';
     HttpClientModule,
     QuranService,
     VideoService,
-    NavService,
+    HeaderService,
     ThemeService
   ],
   bootstrap: [AppComponent],

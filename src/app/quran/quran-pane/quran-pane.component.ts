@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { QuranService } from '../services/quran.service';
+import { QuranService } from '../../services/quran.service';
 import { Observable } from 'rxjs';
-import { ThemeService } from '../services/theme.service';
-import { SurahInfo } from '../models/surahinfo.model';
+import { ThemeService } from '../../services/theme.service';
+import { SurahInfo } from '../../models/surahinfo.model';
 import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
@@ -13,12 +13,10 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class QuranPaneComponent implements OnInit {
 
   surahList: SurahInfo[] = [];
-  isThemeDark: Observable<boolean>;
   surahId: number;
 
   constructor(
     private quranservice: QuranService, 
-    private themeService: ThemeService,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -49,9 +47,5 @@ export class QuranPaneComponent implements OnInit {
       return 'V' + Math.round(value / 1000);
     }
     return value;
-  }
-
-  toggleDarkTheme(checked: boolean) {
-    this.themeService.setDarkTheme(checked);
   }
 }

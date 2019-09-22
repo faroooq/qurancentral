@@ -1,42 +1,35 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {NavService} from './nav.service';
 import {MediaChange, ObservableMedia} from '@angular/flex-layout';
-import {NavItem} from './nav-item';
+import {HeaderItem} from './header-item';
 import {Subscription, Observable} from 'rxjs';
-import { ThemeService } from '../services/theme.service';
+import { HeaderService } from './header.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class NavbarComponent implements OnInit, OnDestroy {
-  isThemeDark: Observable<boolean>;
+export class HeaderComponent implements OnInit, OnDestroy {
   watcher: Subscription;
-  navItems: NavItem[];
-  namedButtons: NavItem[] = [];
-  iconButtons: NavItem[] = [];
-  overflowMenuItems: NavItem[] = [];
+  navItems: HeaderItem[];
+  namedButtons: HeaderItem[] = [];
+  iconButtons: HeaderItem[] = [];
+  overflowMenuItems: HeaderItem[] = [];
 
-  constructor(public navService: NavService,
-              public mediaService: ObservableMedia, private themeService: ThemeService) {}
+  constructor(public navService: HeaderService,
+              public mediaService: ObservableMedia) {}
 
   ngOnInit() {
-    this.isThemeDark = this.themeService.isThemeDark;
+    // ***** CODE FOR MENU ICON CHANGE IN MOBILE VIEW *****
     // Assume this is a file read or HttpClient request that completes after the first event.
-    this.navService.getNavItems().subscribe((items: NavItem[]) => {
+    this.navService.getNavItems().subscribe((items: HeaderItem[]) => {
       this.navItems = items;
       this.onMediaChange();
-
       this.watcher = this.mediaService.subscribe((change: MediaChange) => {
         this.onMediaChange();
       });
     });
-  }
-
-  toggleDarkTheme(checked: boolean) {
-    // console.log('Checked : ' + checked)
-    this.themeService.setDarkTheme(checked);
+    // ***** CODE FOR MENU ICON CHANGE IN MOBILE VIEW *****
   }
 
   ngOnDestroy() {
@@ -62,7 +55,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
     } else if (this.mediaService.isActive('xl')) {
       this.namedButtons = this.namedButtons.concat(items.splice(0, 16));
     }
-
     if (items.length > 0) {
       this.overflowMenuItems = items;
     }

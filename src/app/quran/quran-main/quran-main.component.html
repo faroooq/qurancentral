@@ -1,0 +1,24 @@
+<div [ngClass]="{'dark-theme': isThemeDark | async}">
+    <div class="mat-app-background">
+        <mat-toolbar class="mat-elevation-z6" color="primary">
+            <button mat-icon-button (click)="opened = !opened">
+                <mat-icon class="menu-style">menu</mat-icon>
+            </button>
+
+            <app-header></app-header>
+
+        </mat-toolbar>
+
+        <mat-sidenav-container class="main-sidenav-container" (backdropClick)="opened = !opened">
+            <mat-sidenav class="z-depth-2" style="width: 260px;" [mode]="mode" [opened]="opened"
+                [fixedInViewport]="true" [fixedTopGap]="layoutGap">
+
+                <app-quran-left></app-quran-left>
+
+            </mat-sidenav>
+
+            <app-quran-pane></app-quran-pane>
+
+        </mat-sidenav-container>
+    </div>
+</div>
