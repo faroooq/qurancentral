@@ -13,11 +13,11 @@
             <mat-sidenav class="z-depth-2" style="width: 260px;" [mode]="mode" [opened]="opened"
                 [fixedInViewport]="true" [fixedTopGap]="layoutGap">
 
-                <app-quran-left></app-quran-left>
+                <app-quran-left (getSurahInfo)="getSurahInfo($event)"></app-quran-left>
 
             </mat-sidenav>
 
-            <app-quran-pane></app-quran-pane>
+            <app-quran-pane [surah]="chapterId"></app-quran-pane>
 
         </mat-sidenav-container>
     </div>

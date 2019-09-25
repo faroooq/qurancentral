@@ -1,9 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ThemeService } from 'src/app/services/theme.service';
 import { VERSION } from '@angular/material';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Router } from '@angular/router';
+import { SurahInfo } from 'src/app/models/surahinfo.model';
+import { QuranService } from 'src/app/services/quran.service';
+import { QuranPaneComponent } from '../quran-pane/quran-pane.component';
 
 @Component({
   selector: 'app-quran-main',
@@ -20,9 +25,17 @@ export class QuranMainComponent implements OnInit {
   isThemeDark: Observable<boolean>;
   selected: string;
   formatLabel: string;
+  
+  surahId: number;
+  @Output() getSurahs = new EventEmitter();
+  chapterId: string;
 
-  constructor(private themeService: ThemeService,
-    private bpo: BreakpointObserver) { }
+  constructor(
+    private themeService: ThemeService,
+    private bpo: BreakpointObserver,
+    private route: ActivatedRoute,
+    private quranservice: QuranService,
+    public router: Router) { }
 
   ngOnInit() {
     this.isThemeDark = this.themeService.isThemeDark;
@@ -34,6 +47,19 @@ export class QuranMainComponent implements OnInit {
         this.determineSidenavMode();
         this.determineLayoutGap();
       });
+
+    this.route.params.forEach((params: Params) => {
+      this.surahId = +params['surahId'];
+      // console.log(this.surahId)
+    });
+    this.getSurahInfo(this.surahId.toString());
+  }
+
+  getSurahInfo(chapter: string) {
+    this.chapterId = chapter;
+    // console.log('chapter :  ' + this.chapterId)
+    // this.router.navigate(['quran', chapter]);
+    // this.getSurahs.emit(chapter);
   }
 
   toggleDarkTheme(checked: boolean) {

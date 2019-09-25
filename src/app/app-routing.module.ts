@@ -31,10 +31,10 @@ const appRoutes: Routes = [
     path: 'quran',
     component: QuranMainComponent,
     canActivate: [SeoGuard],
-    children: [
+    // children: [
       // { path: "", redirectTo: "surah", pathMatch: "full" },
-      { path: "surah", component: QuranPaneComponent }
-    ],
+    //   { path: "surah", component: QuranPaneComponent }
+    // ],
     data: {
       title: ['Quran Translation'],
       desc: 'QuranCentral is an unique portal providing Authentic Islamic Content and'
@@ -42,17 +42,17 @@ const appRoutes: Routes = [
       keywords: 'quran, tafsir, arabic, madina, simplified, hadith, muslim, islam, central, furqan, tafheem, mariful quran, ibn kathir, moududi'
     }
   },
-  // {
-  //   path: 'quran/:surahId',
-  //   component: QuranPaneComponent,
-  //   canActivate: [SeoGuard],
-  //   data: {
-  //     title: ['Quran Translation'],
-  //     desc: 'QuranCentral is an unique portal providing Authentic Islamic Content and'
-  //       + ' designed beautifully. Quran in different languages, Tafsir, Arabic, Quran Audio, Arabic Grammar...',
-  //     keywords: 'quran, tafsir, arabic, madina, simplified, hadith, muslim, islam, central, furqan, tafheem, mariful quran, ibn kathir, moududi'
-  //   }
-  // },
+  {
+    path: 'quran/:surahId',
+    component: QuranMainComponent,
+    canActivate: [SeoGuard],
+    data: {
+      title: ['Quran Translation'],
+      desc: 'QuranCentral is an unique portal providing Authentic Islamic Content and'
+        + ' designed beautifully. Quran in different languages, Tafsir, Arabic, Quran Audio, Arabic Grammar...',
+      keywords: 'quran, tafsir, arabic, madina, simplified, hadith, muslim, islam, central, furqan, tafheem, mariful quran, ibn kathir, moududi'
+    }
+  },
   {
     path: 'tafsir',
     component: TafsirComponent,

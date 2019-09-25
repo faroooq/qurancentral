@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, pipe, forkJoin } from 'rxjs';
 import { map, filter, scan, retry, catchError } from 'rxjs/operators';
 import { SurahList } from '../models/surahlist.model';
+import { VerseList } from '../models/verselist.model';
 
 // const headers = new HttpHeaders({ 'Content-Type': 'text/plain' });
 // headers.set('Access-Control-Allow-Origin', '*');
@@ -17,6 +18,7 @@ export class QuranService {
     chapterInfo1 = 'https://raw.githubusercontent.com/faroooq/qc_db/master/quran-translations/en/sahih/2_baqara.json';
     // chapterInfo = '../../assets/db/quran-trans/baqara.json';
     surahList = 'https://raw.githubusercontent.com/faroooq/qc_db/master/surah-list.json';
+    verseList = 'https://raw.githubusercontent.com/faroooq/qc_db/master/verse-list.json';
 
     constructor(private http: HttpClient) { }
 
@@ -44,6 +46,14 @@ export class QuranService {
             map((data: any) => {
                 return data;
             }),
+        );
+        return forkJoin(surahs);
+    }
+    getVerseList(chapter: number): Observable<any> {
+        let surahs = this.http.get(this.verseList).pipe(
+            map((response: any) => {
+                return response.data[chapter]
+            })
         );
         return forkJoin(surahs);
     }
