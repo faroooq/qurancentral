@@ -1,3 +1,6 @@
+Access this project demo from the below url:
+https://qurancentral.web.app/quran/English/en.sahih/1
+
 Deploying in Firebase Hosting:
 ------------------------------
 
@@ -43,12 +46,6 @@ https://blog.realworldfullstack.io/real-world-app-part-23-ssr-with-angular-unive
 Images Design:
 ==============
 https://www.canva.com/
-
-Conduit medimum like app:
-=======================
-https://github.com/gothinkster/angular-realworld-example-app
-https://codeburst.io/integrate-medium-editor-in-angular-8-5abbe383b10a
-https://code.tutsplus.com/tutorials/how-to-build-mediums-real-time-applause-feature-with-angular-and-pusher--cms-31909
 
 NavBar Stackblitz link:
 =======================
