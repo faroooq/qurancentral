@@ -1,5 +1,5 @@
 Access this project demo from the below url:
-https://quranmedium.web.app/quran/English/en.sahih/1
+https://quranmedium.web.app/
 
 Deploying in Firebase Hosting:
 ------------------------------
